@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WaistToHip">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waist Circumference"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_waist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:hint="cm"
+        android:inputType="number"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hip Circumference"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/ed_hip"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:hint="cm"
+        android:gravity="center"
+        android:background="@drawable/edittext"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RadioGroupHip"
+        >
+
+
+        <RadioButton
+            android:id="@+id/Hip_male_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/Hip_female_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Female"/>
+    </RadioGroup>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cal_waistToHip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Calculate"
+            android:textColor="#fff"
+            android:layout_weight="1"
+
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_700"
+            />
+
+        <Button
+            android:id="@+id/btn_res_waistToHip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Reset"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_weight="1"
+
+            android:textStyle="bold"
+            android:backgroundTint="#C55E3E"
+            />
+    </LinearLayout>
+
+</LinearLayout>

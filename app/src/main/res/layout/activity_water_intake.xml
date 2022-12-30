@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Water_intake">
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/ed_wateage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:hint="Year"
+        android:inputType="number"
+        android:background="@drawable/edittext"
+        android:gravity="center"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/ed_waterkg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:hint="kg"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/edittext"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_wcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Calculate"
+            android:textColor="#fff"
+            android:layout_weight="1"
+
+            android:textStyle="bold"
+            android:backgroundTint="@color/teal_700"
+            />
+
+        <Button
+            android:id="@+id/btn_wreset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Reset"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_weight="1"
+
+            android:textStyle="bold"
+            android:backgroundTint="#C55E3E"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

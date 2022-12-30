@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ShareApp"
+
+            android:title="Share App"
+            android:icon="@drawable/ic_baseline_share_24"
+
+
+
+            >
+
+
+
+
+        </item>
+
+    </group>
+
+
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/MoreApp"
+
+            android:title="More Apps"
+            android:icon="@drawable/ic_baseline_more_24"
+
+
+
+            >
+
+
+
+
+        </item>
+
+    </group>
+
+
+
+
+    <group
+        android:id="@+id/group3"
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/RateMe"
+
+            android:title="Rate App"
+            android:icon="@drawable/ic_baseline_star_rate_24"
+
+
+
+            >
+
+
+
+
+        </item>
+
+    </group>
+
+    <group
+
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/privicy"
+            android:title="Privacy Policy"
+            android:icon="@drawable/ic_baseline_lock_24"
+
+
+
+            >
+
+
+
+
+        </item>
+
+    </group>
+
+
+
+
+</menu>

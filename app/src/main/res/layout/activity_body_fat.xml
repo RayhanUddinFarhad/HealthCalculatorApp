@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BodyFat">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="20dp"/>
+
+
+    <EditText
+        android:id="@+id/ed_bodyfatAge"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:hint="Year"
+        android:background="@drawable/edittext"
+        android:inputType="number"
+
+        android:layout_margin="10dp"
+
+        android:padding="20dp"
+
+        android:ems="10"
+
+
+        android:drawablePadding="12dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="20dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/ed_bodyfatfeet"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:hint="feet"
+            android:background="@drawable/edittext"
+            android:inputType="number"
+
+            android:layout_margin="10dp"
+            android:padding="20dp"
+
+            android:ems="10"
+
+
+            android:drawablePadding="12dp"/>
+
+
+        <EditText
+            android:id="@+id/ed_bodyfatinch"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:hint="inch"
+            android:inputType="number"
+
+            android:layout_margin="10dp"
+            android:padding="20dp"
+
+            android:ems="10"
+            android:background="@drawable/edittext"
+
+
+            android:drawablePadding="12dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_margin="20dp"/>
+
+
+    <EditText
+        android:id="@+id/ed_bodyfatkg"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:hint="kg"
+        android:inputType="number"
+
+        android:layout_margin="10dp"
+        android:padding="20dp"
+
+        android:ems="10"
+        android:background="@drawable/edittext"
+
+
+        android:drawablePadding="12dp"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RadioGroupFat"
+        >
+
+
+        <RadioButton
+            android:id="@+id/Fat_male_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"/>
+
+        <RadioButton
+            android:id="@+id/Fat_female_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Female"/>
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_bodyfat_Calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculte"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:backgroundTint="#4F63D1"
+            android:foreground="?selectableItemBackground"
+            />
+        <Button
+            android:id="@+id/btn_bodyfat_Reset"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:backgroundTint="#B63C3C"
+            android:layout_margin="10dp"
+            android:textColor="#fff"
+            android:foreground="?selectableItemBackground"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

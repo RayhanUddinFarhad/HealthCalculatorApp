@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+
+
+
+
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/di_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your BMI Score"
+            android:layout_marginLeft="10dp"
+            
+            android:layout_marginTop="10dp"/>
+        
+      
+            
+
+
+    </LinearLayout>
+    
+    
+    <TextView
+        android:id="@+id/dia_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="178.0"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:textColor="#3F51B5"/>
+    <TextView
+        android:id="@+id/dia_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Underweight"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#02AC09"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:background="#FF9800" />
+
+
+    <TextView
+        android:id="@+id/dia_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:text="Having Bmi below 18.5 indicate that you are feathery, so you are recommended."/>
+
+
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="40dp"
+        android:backgroundTint="#684DB3"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:foreground="?attr/selectableItemBackground"
+
+        android:text="Back"/>
+    
+    
+
+</LinearLayout>

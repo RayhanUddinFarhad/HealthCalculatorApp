@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Zakat"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#6847C1"
+                    android:gravity="center"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="#FF9800" />
+
+
+                <TextView
+                    android:id="@+id/tv_Dis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Another type of Zakat that is Wajib (compulsory) on Muslims is Zakah al-Fitr, often referred to as Sadaqah al-Fitr. The word Fitr means the same as Iftar, breaking a fast and it comes from the same root word as Futoor which means breakfast. Thus, Islamically, Zakah al-Fitr is the name given to charity which is distributed near the end of Ramadan.  The amount of Zakah is the same for everyone regardless of their different income brackets. The minimum amount is one Saa` (two handfuls) of food, grain or dried fruit for each member of the family. This calculation is based on Ibn Umar's report that the Prophet (PBUH) made Zakah al-Fitr is compulsory and payable by a Saa` of dried dates or a Saa` of barley. The Companion, Abu Sa`eed al-Khudree said"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    android:textColor="#ED000000"
+                    android:lineSpacingExtra="5dp"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/btn_back2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="40dp"
+                    android:backgroundTint="#684DB3"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:foreground="?attr/selectableItemBackground"
+
+                    android:text="Back"/>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

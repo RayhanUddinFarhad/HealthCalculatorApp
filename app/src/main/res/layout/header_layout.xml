@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="14dp"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="#171c30"
+
+    android:layout_height="220dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="20dp"
+        android:paddingTop="20dp"
+        android:scaleType="centerCrop"
+
+
+        android:src="@drawable/header" />
+
+</LinearLayout>

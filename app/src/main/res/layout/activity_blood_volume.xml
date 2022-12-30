@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".BloodVolume">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/ed_bloodHeight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                android:hint="cm"
+                android:inputType="number"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textSize="30dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <EditText
+                android:id="@+id/ed_bloodWeight"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="20dp"
+                android:hint="kg"
+                android:inputType="number"
+                android:background="@drawable/edittext"
+                android:gravity="center"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RadioGroup"
+                    >
+
+
+                    <RadioButton
+                        android:id="@+id/blood_male_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"/>
+
+                    <RadioButton
+                        android:id="@+id/blood_female_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Female"/>
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_bloodcal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Calculate"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+
+                    android:textStyle="bold"
+                    android:backgroundTint="#3C1D8E"
+                    />
+
+                <Button
+                    android:id="@+id/btn_bloodreset"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Reset"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+
+                    android:textStyle="bold"
+                    android:backgroundTint="#C55E3E"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
